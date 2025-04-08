@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shobha Rani Duggineni – Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* 🔵 New Skills Styling */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 1rem;
+      justify-content: center;
+    }
+
+    .skill-tag {
+      background: #1e1e2f;
+      color: #ffffff;
+      padding: 10px 16px;
+      border-radius: 25px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: transform 0.2s ease, background 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      cursor: default;
+    }
+
+    .skill-tag:hover {
+      transform: scale(1.05);
+      background: #007bff;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar">
-    <div class="logo">Shobha 💜</div>
+    <div class="logo">Shobha</div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -30,34 +56,58 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Master's student in Information Technology at the University of Cincinnati with a strong background in data analysis, visualization, and pipeline development. Passionate about using data to drive smart decisions and meaningful impact.</p>
+    <p>Data Analyst skilled in SQL, Power BI, and end-to-end data workflows. Experienced in turning raw data into impactful visual 
+      stories that support strategic decisions. Passionate about continuous learning and solving real-world problems with data.</p>
   </section>
 
   <section id="skills">
     <h2>Skills</h2>
-    <div class="tags">
-      <span>Python</span><span>R</span><span>SQL</span><span>Django</span>
-      <span>Power BI</span><span>Tableau</span><span>Excel</span><span>Azure</span>
-      <span>AWS</span><span>GCP</span><span>PostgreSQL</span><span>MongoDB</span>
+    <div class="skills-container">
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">SQL</span>
+      <span class="skill-tag">Power BI</span>
+      <span class="skill-tag">Tableau</span>
+      <span class="skill-tag">Excel</span>
+      <span class="skill-tag">AWS</span>
+      <span class="skill-tag">Azure</span>
+      <span class="skill-tag">GCP</span>
+      <span class="skill-tag">PostgreSQL</span>
+      <span class="skill-tag">MongoDB</span>
+      <span class="skill-tag">Django</span>
+      <span class="skill-tag">R</span>
     </div>
   </section>
 
   <section id="experience">
     <h2>Experience</h2>
+
     <div class="card">
-      <h3>Data Developer – University of Cincinnati</h3>
-      <p class="date">Jan 2024 – Dec 2024</p>
-      <ul>
-        <li>Created ETL pipelines & dashboards with Alteryx + Power BI</li>
-        <li>Automated SQL reporting (cut manual work by 50%)</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Data Analyst II – TCS</h3>
+      <h3>Data Analyst II – Tata Consultancy Services</h3>
       <p class="date">Jun 2021 – Aug 2023</p>
       <ul>
-        <li>Forecasted revenue, built Salesforce CRM dashboards</li>
-        <li>Used ML models to increase prediction accuracy 60%</li>
+        <li>Led revenue forecasting and go-to-market planning for an $800M portfolio, improving data accuracy by 2%.</li>
+        <li>Developed analytics dashboards in Salesforce CRM to drive data-driven business decisions.</li>
+        <li>Optimized PostgreSQL queries, reducing execution time by 50% and improving KPI reporting.</li>
+        <li>Built predictive ML models using Python and SQL, improving forecast accuracy by 60%.</li>
+        <li>Automated KPI updates through ETL pipelines, saving 10+ hours/week of manual reporting.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Data Analyst – Cognizant</h3>
+      <p class="date">Jun 2020 – May 2021</p>
+      <ul>
+        <li>Automated SQL reporting and enhanced ETL/ELT flows to streamline financial data delivery.</li>
+        <li>Conducted A/B testing and behavioral analytics, boosting conversion rates by 25% in 3 months.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Data Insights Intern – IBM</h3>
+      <p class="date">Mar 2019 – Feb 2020</p>
+      <ul>
+        <li>Created Power BI dashboards from SAP datasets to support executive reporting.</li>
+        <li>Reduced reporting time by 60% and improved metric accessibility for key stakeholders.</li>
       </ul>
     </div>
   </section>
@@ -75,7 +125,7 @@
   </section>
 
   <footer>
-    <p>© 2025 Shobha Rani Duggineni · Made with 💜</p>
+    <p>© 2025 Shobha Rani Duggineni · </p>
   </footer>
 </body>
 </html>
